@@ -4,13 +4,14 @@
 .main_section .main_wrapper {
    display: grid;
    grid-template-columns: 3fr 1fr;
-   grid-gap: 128px;
+   grid-gap: 64px;
 }
 .post {
    margin-bottom: 100px;
 }
 .post img {
    margin-bottom: 30px;
+   width: 100%;
 }
 .post_info .date {
    color: #fff;
@@ -153,6 +154,12 @@
    color: #999999;
    padding: 9px 11px;
    margin: 0 5px 5px 0;
+   transition: all .2s ease-in-out;
+}
+.tags .tags__item:hover {
+   background: #F2F2F2;
+   color: #606076;
+   cursor: pointer;
 }
 @media screen and (max-width: 1288px) {
    .main_section .main_wrapper {

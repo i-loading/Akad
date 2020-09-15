@@ -55,6 +55,8 @@
    margin-top: 15px;
    font-size: 14px;
    font-family: 'Open Sans';
+   line-height: 30px;
+   color: #999999;
 }
 .team_section .main_title {
    max-width: 295px;

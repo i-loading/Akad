@@ -7,6 +7,9 @@
 .left_part {
    max-width: 555px;
 }
+form {
+   max-width: 555px;
+}
 form .top_input {
    display: flex;
    justify-content: space-between;
@@ -15,7 +18,7 @@ form input {
 	outline: none;
 	width: 261px;
 	margin: 0 0 30px 0;
-   padding: 18px 0;
+   padding: 18px 20px;
    background: #fefcf9;
    transition: all 0.2s ease-in-out;
    font-size: 12px;
@@ -23,7 +26,6 @@ form input {
 form input::placeholder {
    text-transform: uppercase;
    color: #cccccc;
-   padding-left: 20px;
 }
 form input:focus {
 	border: 1px solid #EF5A4B;
@@ -32,23 +34,23 @@ form .name_input {
    margin-right: 29px;
 }
 form .object_input {
-   width: 100%;
+   width: 513px;
 }
 form input, .area {
 	border: 1px solid #e5e5e5;
 }
 form .area {
    background: #fefcf9;
-	width: 100%;
+	width: 533px;
 	height: 198px;
 	resize: none;
    display: block;
    transition: all 0.2s ease-in-out;
    padding-top: 18px;
+   padding-left: 20px;
    font-size: 12px;
 } 
 form .area::placeholder {
-   padding-left: 16px;
    font-size: 12px;
    text-transform: uppercase;
    color: #cccccc;
@@ -124,7 +126,14 @@ form .sub:hover {
       flex-direction: column;
    }
    form .name_input,
-   form .mail_input {
-      width: 100%;
+   form .mail_input,
+   form .object_input,
+   form .area {
+      width: 90%;
+   }
+   form .area {
+      width: 94%;
+      padding-right: 0;
+      margin-right: 0;
    }
 }
