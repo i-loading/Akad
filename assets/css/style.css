@@ -85,7 +85,7 @@ nav div svg {
    fill:none;
    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
    stroke:#000;
-   stroke-width:5.5;
+   stroke-width: 3;
    stroke-linecap:round;
 }
 .ham5 .top {
@@ -375,7 +375,7 @@ nav div svg {
    color: #cdcdcd;
    -webkit-transition: all .2s ease-in-out;
    transition: all .2s ease-in-out;
-   z-index: 111;
+   z-index: 10;
 }
 .input_wrapper span.active {
    font-size: 10px;
@@ -425,7 +425,7 @@ footer .container {
 .socials p {
    font-family: 'Open Sans';
    font-size: 14px;
-   margin-bottom: 28px;
+   margin-bottom: 15px;
    text-transform: uppercase;
 }
 .socials .socials__items {
@@ -480,6 +480,15 @@ footer .container {
    .menu_burger {
       margin-left: 420px;
    }
+   .footer_menu {
+    flex-direction: column;
+  }
+  .footer_menu li {
+      margin-bottom: 10px;
+  }
+  footer {
+    padding: 50px;
+ }
 }
 @media screen and (max-width: 915px) {
    .menu_burger {
@@ -507,7 +516,7 @@ footer .container {
    .header__history img {
       margin-right: 0;
       padding-bottom: 60px;
-      width: 50%;
+      width: 70%;
       margin: 0 auto;
    }
    .reasons {
@@ -516,15 +525,6 @@ footer .container {
    }
    .reasons__item {
       margin-bottom: 60px;
-   }
-   footer {
-      padding: 50px;
-   }
-   .footer_menu {
-      flex-direction: column;
-   }
-   .footer_menu li {
-      margin-bottom: 10px;
    }
    .form {
       padding: 30px 22px 40px 26px;
@@ -558,12 +558,12 @@ footer .container {
    .menu_burger {
       margin-left: 20px;
    }
+   .header__titles_title {
+     max-width: 500px;
+     padding: 9px 16px;
+   }
 }
 @media screen and (max-width: 515px) {
-   .logo {
-      /* margin: 0 50%;
-      transform: translate(-50%, 0); */
-   }
    .menu {
       flex-wrap: wrap;
       justify-content: center;

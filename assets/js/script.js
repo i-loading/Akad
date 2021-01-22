@@ -5,10 +5,12 @@ $(document).ready(function () {
    });
    $('.input_wrapper').click(function (e) { 
       e.preventDefault();
-      $('.input_wrapper span').toggleClass('active');
+      $('.input_wrapper span').addClass('active');
    });
-   $('.input_wrapper').focusout(function (e) { 
-      e.preventDefault();
-      $('.input_wrapper span').toggleClass('active');
+   $(".input_wrapper").focusout(function (e) {
+     var valset = $(".input_wrapper input").val();
+     if (valset == "") {
+       $(".input_wrapper span").removeClass("active");
+     }
    });
 });
